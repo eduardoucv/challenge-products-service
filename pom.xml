@@ -13,12 +13,17 @@
         <swagger-annotations-version>1.5.22</swagger-annotations-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <springfox-version>2.9.2</springfox-version>
-        <spring-boot-starter-test-version>2.1.1.RELEASE</spring-boot-starter-test-version>
-        <spring-boot-starter-web-version>2.1.0.RELEASE</spring-boot-starter-web-version>
+        <spring-boot-starter-test-version>2.2.4.RELEASE</spring-boot-starter-test-version>
+        <spring-boot-starter-web-version>2.2.4.RELEASE</spring-boot-starter-web-version>
         <jackson-databind-nullable>0.2.1</jackson-databind-nullable>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+            <version>1.0.2.RELEASE</version>
+        </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
@@ -50,6 +55,7 @@
             <artifactId>jackson-databind-nullable</artifactId>
             <version>${jackson-databind-nullable}</version>
         </dependency>
+
     </dependencies>
 
     <build>

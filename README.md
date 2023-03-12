@@ -1,10 +1,12 @@
 # challenge-products-service
 
-New feature showing similar products. 
+This project shows similar products given a product id. 
 
-This project depends on project [backendDevTest](https://github.com/dalogax/backendDevTest) running to work properly.
+- This project depends on project [backendDevTest](https://github.com/dalogax/backendDevTest) running to work properly.
 
-openapi-generator-maven-plugin was used to generate code from the swagger file
+- openapi-generator-maven-plugin was used to generate code from the swagger file
+
+- resilience4j was used to implement circuit breaker
 
 ## Getting Started
 
@@ -13,6 +15,12 @@ To start developing the project please check if you have these tools installed o
 * [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Docker](https://www.docker.com/get-started)
 * [Mocks Application Running](https://github.com/dalogax/backendDevTest)
+
+### Considerations
+
+- This project could be improved implementing cache for a better performance
+- This project could be improved implementing retry for each client calls 
+- Circuit breaker can be improved using a file with static suggestions or using cache
 
 ### Installation
 
